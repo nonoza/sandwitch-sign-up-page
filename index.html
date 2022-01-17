@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+  
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+html,body {
+   
+    background: url(../images/bg-1) no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper{
+    text-align: center;
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+body{
+    overflow: hidden;
+}
+
+.form{
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.6) 100%);
+    padding: 20px;
+    height: 500px;
+    border-radius: 40px;
+    opacity: 1.0;
+    width: 500px;
+
+}
+.form a {
+    color: #c66358;
+    text-decoration: none;
+    font-weight: 400;
+}
+form{
+   margin-top: 20px;
+}
+::placeholder{
+    font-size: 16px;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+
+}
+input{
+    width: 70%;
+    margin:20px;
+    padding: 15px;
+    border: none;
+    border-radius:112px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    font-size: 16px;
+}
+.heading{
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px
+    
+}
+form p {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+input[type="submit"]{
+    background-color: #c66358;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+    .form {
+        width: 400px;
+    }
+    
+}
+@media only screen and (max-width: 393px){
+    .form {
+        width: 353px;
+    }
+    
+}
+    </style>
+
+</head>
+<body>
+  <div class="wrapper">
+     
+     <div class="form">
+        <div class="heading">
+            <img src="images/logo.png" alt="logo" width="300px">
+        </div>
+          <form>
+              <input type="text" title="username" placeholder="Username"/>
+              <input type="password" title="password" placeholder="Password"/>
+              <p>No Account? <a href="sign-up.html">Sign Up</a></p>
+              <input type="submit" title="Submit">
+           </form>
+      </div>
+  </div>  
+</body>
+</html>
